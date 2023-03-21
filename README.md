@@ -1,0 +1,2 @@
+This little project is for hosting some scripts and other text based data. I made this because I wanted to get into NestJS.
+So please do not judge me for my code in this project. This is my first time using NestJS.
