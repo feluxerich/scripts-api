@@ -1,5 +1,5 @@
 import { ApiProperty } from '@nestjs/swagger';
-import { IsNotEmpty, MaxLength } from 'class-validator';
+import { IsNotEmpty, MaxLength, IsOptional } from 'class-validator';
 
 export class CreateScriptDto {
   @ApiProperty()
@@ -12,5 +12,6 @@ export class CreateScriptDto {
 
   @ApiProperty({ nullable: true, maxLength: 128 })
   @MaxLength(128)
+  @IsOptional()
   description: string;
 }
